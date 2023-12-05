@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+    font-weight: 400;
+}
+
+
+#titulo, #subtitulo {
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    border: 2px solid white;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 2%;
+}.navbar-brand{
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 24px;
+}.nav-link{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 12px;
+}.nav-link:hover{
+    transform: scale(1.2);
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #152733;
+    margin-bottom: 2%;
+}
+
+input, button {
+    border-radius: 5px;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+}
+
+.campo .informacao {
+    flex: 0 0 auto;
+    margin-right: 1%;
+}
+
+.campo .informacao[id="sexo"] {
+    margin-left: 10%;
+}
+
+.campo .pos-informacao {
+    flex: 0 0 auto;
+    margin-left: 1.5%;
+}
+
+.campo input {
+    flex: 1;
+    padding: 10px;
+}
+
+.campo, .titulo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.campo, .titulos {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.descricao {
+    text-align: justify;
+}
+
+.campo .informacao[id="tratamento_medico"], .campo[id="objetivos_pessoais"] {
+    margin-top: 16px;
+}
+
+.subtitulo[id="perna_esquerda"], .subtitulo[id="braco_direito"], .subtitulo[id="dobras_cutaneas_masc"], .subtitulo[id="wells"] {
+    margin-top: 16px;
+}
+
+.subtitulo[id="wells"], .subtitulo[id="salto_horizontal"], .subtitulo[id="flexao_de_braco"], .subtitulo[id="abdominais"],
+.subtitulo[id="teste_quadrado"], .subtitulo[id="teste_cooper"] {
+    margin-bottom: 16px;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="number"] {
+    padding: 0.2em;
+    border: 1px solid #121c39;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo[id="idade"] {
+    float: left;
+    width: 30%;
+    gap: 2%;
+}
+
+.campo[id="peso"], .campo[id="estatura"], .campo[id="bic_relx_braco_direito"], .campo[id="bic_contr_braco_direito"],
+.campo[id="ant_relx_braco_direito"], .campo[id="ant_contr_braco_direito"], .campo[id="punho_braco_direito"],
+.campo[id="bic_relx_braco_esquerdo"], .campo[id="bic_contr_braco_esquerdo"], .campo[id="ant_relx_braco_esquerdo"], 
+.campo[id="ant_contr_braco_esquerdo"], .campo[id="punho_braco_esquerdo"], .campo[id="pescoco"], .campo[id="peitoral"],
+.campo[id="cintura"], .campo[id="abdominal"], .campo[id="quadril"], .campo[id="coxa_relaxada_direita"], .campo[id="coxa_contraida_direita"],
+.campo[id="pant_relaxada_direita"], .campo[id="pant_contraida_direita"], .campo[id="pant_relaxada_esquerda"],
+.campo[id="pant_contraida_esquerda"], .campo[id="coxa_relaxada_esquerda"], .campo[id="coxa_contraida_esquerda"],
+.campo[id="triceps"], .campo[id="supra_iliaca"], .campo[id="dobra_abdominal"], .campo[id="subescapular"], .campo[id="coxa"],
+.campo[id="supra_iliaca_fem"]
+{
+    width: 30%;
+    float: left;
+    gap: 2%;
+}
+
+.campo[id="estatura"], .campo[id="bic_contr_braco_direito"], .campo .informacao[id="sexo"], .campo .informacao[id="estado_civil"], 
+.campo .informacao[id="objetivos_pessoais"], .campo .informacao[id="experiencia"], .campo .informacao[id="historico_esportivo"],
+.campo .informacao[id="alcool"], .campo .informacao[id="substancias"], .campo .informacao[id="cafeina"],
+.campo .informacao[id="peso"], .campo[id="ant_contr_braco_direito"], .campo[id="bic_contr_braco_esquerdo"],
+.campo[id="ant_contr_braco_esquerdo"], .campo[id="peitoral"], .campo[id="abdominal"], .campo[id="coxa_contraida_direita"], 
+.campo[id="pant_contraida_direita"], .campo[id="coxa_contraida_esquerda"], .campo[id="pant_contraida_esquerda"],
+.campo .informacao[id="tratamento_medico"], .campo .informacao[id="intestino"], .campo .informacao[id="ortopedico"],
+.campo .informacao[id="varizes"], .campo .informacao[id="hipertensao"], .campo[id="e-mail"], .campo[id="nome"],
+.campo[id="sono"], .campo .informacao[id="epilepsia"], .campo .informacao[id="cardiaco"], .campo[id="medicamento_suplemento"],
+.campo[id="supra_iliaca"], .campo[id="supra_iliaca_fem"], .campo .informacao[id="diabetes"], .campo .informacao[id="filhos"],
+.campo .informacao[id="gestacao"]
+{
+    margin: 0;
+}
+
+.campo[id="sexo"] {
+    float: left;
+    width: 30%;
+    margin: 0;
+}
+
+.campo[id="estado_civil"] {
+    width: 65%;
+    float: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.campo[id="endereco"] {
+    margin-top: 0;
+}
+
+.campo[id="objetivos_pessoais"] {
+    width: 75%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="historico_esportivo"] {
+    width: 60%;
+    float: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-input {
+    margin-left: 10px;
+}
+
+.campo[id="experiencia"] {
+    width: 80%;
+    float: left;
+}
+
+.campo[id="alcool"] {
+    width: 30%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="cafeina"] {
+    width: 42%;
+    float: left;
+}
+
+.campo[id="substancias"] {
+    width: 33%;
+    float: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.campo[id="cardiaco"] {
+    width: 40%;
+    float: left;
+}
+
+.campo[id="tratamento_medico"] {
+    width: 37%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="intestino"] {
+    width: 45%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="ortopedico"] {
+    width: 43%;
+    float: left;
+}
+
+.campo[id="varizes"] {
+    width: 28%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="epilepsia"] {
+    width: 30%;
+    float: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.campo[id="hipertensao"] {
+    width: 33%;
+    float: left;
+}
+
+.campo[id="diabetes"] {
+    width: 30%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id="gestacao"] {
+    width: 28%;
+    float: left;
+}
+
+.campo[id="filhos"] {
+    width: 28%;
+    float: left;
+    margin: 0;
+}
+
+.campo[id='cooper'] {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+.campo .informacao[id="cooper"] {
+    margin-top: 16px;
+}
+
+.campo[id="wells"], .campo[id="salto_horizontal"], .campo[id="flexao"], .campo[id="abdominais"], .campo[id="quadrado"] {
+    width: 50%;
+    float: left;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.botao {
+    margin-top: 2em;
+    font-size: 1.2em;
+    background: #6187F9;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    float: right;
+}
+
+.botao:hover {
+    background: #6187F9;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+@media (max-width: 361px) {
+    #titulo {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #subtitulo {
+        width: 95%;
+        font-size: 14.5px;
+    }
+
+    .descricao {
+        font-size: 14.5px;
+    }
+
+    form {
+        max-width: 100%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .campo[id="sexo"] {
+        width: 70%;
+    }
+
+    .campo[id="estado_civil"], .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .campo[id="historico_esportivo"],
+    .campo[id="lesoes"], .campo[id="intestino"], .campo[id="tratamento_medico"], .campo[id="sexo"], .campo[id="varizes"],
+    .campo[id="alcool"] {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    
+    .campo[id="estado_civil"] label, .campo[id="objetivos_pessoais"] label, .campo[id="experiencia"] label,
+    .campo[id="historico_esportivo"] label, .campo[id="lesoes"] label, .campo[id="condicoes_familiares"] label,
+    .campo[id="intestino"] label, .campo[id="cardiaco"] label, .campo[id="tratamento_medico"] label,
+    .campo[id="sexo"] label, .campo[id="ortopedico"] label, .campo[id="varizes"] label, .campo[id="hipertensao"] label,
+    .campo[id="epilepsia"] label, .campo[id="diabetes"] label, .campo[id="gestacao"] label, .campo[id="filhos"] label,
+    .campo[id="sono"], .campo[id="alimentacao_manha"], .campo[id="alimentacao_almoco"], .campo[id="alimentacao_jantar"],
+    .campo[id="frequencia_alimentar"], .campo[id="agua"], .campo[id="alcool"] label, .campo[id="cafeina"] label,
+    .campo[id="substancias"] label, .med_antropometricas .campo label, .campo[id="doencas"] label, .campo[id="ocupacao"]
+    .campo[id="e-mail"] label, .campo[id="telefone"] label, .campo[id="endereco"] label {
+        display: block;
+    }
+
+    .campo[id="condicoes_familiares"], .campo[id="medicamento_suplemento"], .campo[id="cardiaco"], .campo[id="ortopedico"],
+    .campo[id="hipertensao"], .campo[id="epilepsia"], .campo[id="diabetes"], .campo[id="gestacao"], .campo[id="filhos"],
+    .campo[id="cafeina"], .campo[id="substancias"], .med_antropometricas .campo, .campo[id="cooper"], .campo[id="wells"],
+    .campo[id="salto_horizontal"], .campo[id="flexao"], .campo[id="abdominais"], .campo[id="quadrado"], .campo[id="doencas"],
+    .campo[id="alergia_intolerancia"], .campo[id="cirurgias"], .campo[id="idade"], .campo[id="nome"], .campo[id="e-mail"],
+    .campo[id="telefone"], .campo[id="ocupacao"], .campo[id="endereco"] {
+        width: 100%;
+        display: block;
+    }
+
+    .campo[id="lesoes"] input, .campo[id="condicoes_familiares"] input, .campo[id="medicamento_suplemento"] input,
+    .campo[id="sono"] input, .campo[id="alimentacao_manha"] input, .campo[id="alimentacao_almoco"] input,
+    .campo[id="alimentacao_jantar"] input, .campo[id="frequencia_alimentar"] input, .campo[id="agua"] input,
+    .med_antropometricas .campo input, .campo[id="cooper"] input, .campo[id="wells"] input, .campo[id="salto_horizontal"] input,
+    .campo[id="flexao"] input, .campo[id="abdominais"] input, .campo[id="quadrado"] input, .campo[id="doencas"] input,
+    .campo[id="alergia_intolerancia"] input, .campo[id="cirurgias"] input, .campo[id="idade"] input, .campo[id="nome"] input,
+    .campo[id="ocupacao"] input, .campo[id="endereco"] input, .campo[id="e-mail"] input, .campo[id="telefone"] input{
+        width: 100%;
+    }
+
+    .campo[id="cirurgias"], .campo[id="alergia_intolerancia"] {
+        width: 100%;
+    }
+    
+    .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .cooper .descricao {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 415px) {
+    #titulo {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #subtitulo {
+        width: 95%;
+        font-size: 14.5px;
+    }
+
+    .descricao {
+        font-size: 14.5px;
+    }
+
+    form {
+        max-width: 100%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .campo[id="sexo"] {
+        width: 70%;
+    }
+
+    .campo[id="estado_civil"], .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .campo[id="historico_esportivo"],
+    .campo[id="lesoes"], .campo[id="intestino"], .campo[id="tratamento_medico"], .campo[id="sexo"], .campo[id="varizes"],
+    .campo[id="alcool"] {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    
+    .campo[id="estado_civil"] label, .campo[id="objetivos_pessoais"] label, .campo[id="experiencia"] label,
+    .campo[id="historico_esportivo"] label, .campo[id="lesoes"] label, .campo[id="condicoes_familiares"] label,
+    .campo[id="intestino"] label, .campo[id="cardiaco"] label, .campo[id="tratamento_medico"] label,
+    .campo[id="sexo"] label, .campo[id="ortopedico"] label, .campo[id="varizes"] label, .campo[id="hipertensao"] label,
+    .campo[id="epilepsia"] label, .campo[id="diabetes"] label, .campo[id="gestacao"] label, .campo[id="filhos"] label,
+    .campo[id="sono"], .campo[id="alimentacao_manha"], .campo[id="alimentacao_almoco"], .campo[id="alimentacao_jantar"],
+    .campo[id="frequencia_alimentar"], .campo[id="agua"], .campo[id="alcool"] label, .campo[id="cafeina"] label,
+    .campo[id="substancias"] label, .med_antropometricas .campo label {
+        display: block;
+    }
+
+    .campo[id="condicoes_familiares"], .campo[id="medicamento_suplemento"], .campo[id="cardiaco"], .campo[id="ortopedico"],
+    .campo[id="hipertensao"], .campo[id="epilepsia"], .campo[id="diabetes"], .campo[id="gestacao"], .campo[id="filhos"],
+    .campo[id="cafeina"], .campo[id="substancias"], .med_antropometricas .campo, .campo[id="cooper"], .campo[id="wells"],
+    .campo[id="salto_horizontal"], .campo[id="flexao"], .campo[id="abdominais"], .campo[id="quadrado"] {
+        width: 100%;
+        display: block;
+    }
+
+    .campo[id="lesoes"] input, .campo[id="condicoes_familiares"] input, .campo[id="medicamento_suplemento"] input,
+    .campo[id="sono"] input, .campo[id="alimentacao_manha"] input, .campo[id="alimentacao_almoco"] input,
+    .campo[id="alimentacao_jantar"] input, .campo[id="frequencia_alimentar"] input, .campo[id="agua"] input,
+    .med_antropometricas .campo input, .campo[id="cooper"] input, .campo[id="wells"] input, .campo[id="salto_horizontal"] input,
+    .campo[id="flexao"] input, .campo[id="abdominais"] input, .campo[id="quadrado"] input {
+        width: 100%;
+    }
+
+    .campo[id="cirurgias"] {
+        width: 100%;
+    }
+    
+    .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .cooper .descricao {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 821px) {
+    #titulo {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #subtitulo {
+        width: 95%;
+        font-size: 14.5px;
+    }
+
+    .descricao {
+        font-size: 14.5px;
+    }
+
+    form {
+        max-width: 100%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .campo[id="sexo"] {
+        width: 70%;
+    }
+
+    .campo[id="estado_civil"], .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .campo[id="historico_esportivo"],
+    .campo[id="lesoes"], .campo[id="intestino"], .campo[id="tratamento_medico"], .campo[id="sexo"], .campo[id="varizes"],
+    .campo[id="alcool"] {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    
+    .campo[id="estado_civil"] label, .campo[id="objetivos_pessoais"] label, .campo[id="experiencia"] label,
+    .campo[id="historico_esportivo"] label, .campo[id="lesoes"] label, .campo[id="condicoes_familiares"] label,
+    .campo[id="intestino"] label, .campo[id="cardiaco"] label, .campo[id="tratamento_medico"] label,
+    .campo[id="sexo"] label, .campo[id="ortopedico"] label, .campo[id="varizes"] label, .campo[id="hipertensao"] label,
+    .campo[id="epilepsia"] label, .campo[id="diabetes"] label, .campo[id="gestacao"] label, .campo[id="filhos"] label,
+    .campo[id="sono"], .campo[id="alimentacao_manha"], .campo[id="alimentacao_almoco"], .campo[id="alimentacao_jantar"],
+    .campo[id="frequencia_alimentar"], .campo[id="agua"], .campo[id="alcool"] label, .campo[id="cafeina"] label,
+    .campo[id="substancias"] label, .med_antropometricas .campo label {
+        display: block;
+    }
+
+    .campo[id="condicoes_familiares"], .campo[id="medicamento_suplemento"], .campo[id="cardiaco"], .campo[id="ortopedico"],
+    .campo[id="hipertensao"], .campo[id="epilepsia"], .campo[id="diabetes"], .campo[id="gestacao"], .campo[id="filhos"],
+    .campo[id="cafeina"], .campo[id="substancias"], .med_antropometricas .campo, .campo[id="cooper"], .campo[id="wells"],
+    .campo[id="salto_horizontal"], .campo[id="flexao"], .campo[id="abdominais"], .campo[id="quadrado"] {
+        width: 100%;
+        display: block;
+    }
+
+    .campo[id="lesoes"] input, .campo[id="condicoes_familiares"] input, .campo[id="medicamento_suplemento"] input,
+    .campo[id="sono"] input, .campo[id="alimentacao_manha"] input, .campo[id="alimentacao_almoco"] input,
+    .campo[id="alimentacao_jantar"] input, .campo[id="frequencia_alimentar"] input, .campo[id="agua"] input,
+    .med_antropometricas .campo input, .campo[id="cooper"] input, .campo[id="wells"] input, .campo[id="salto_horizontal"] input,
+    .campo[id="flexao"] input, .campo[id="abdominais"] input, .campo[id="quadrado"] input {
+        width: 100%;
+    }
+
+    .campo[id="cirurgias"] {
+        width: 100%;
+    }
+    
+    .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .cooper .descricao {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 821px) and (max-width: 1025px) {
+    #titulo {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    #subtitulo {
+        width: 95%;
+        font-size: 14.5px;
+    }
+
+    .descricao {
+        font-size: 14.5px;
+    }
+
+    form {
+        max-width: 100%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .campo[id="sexo"] {
+        width: 70%;
+    }
+
+    .campo[id="estado_civil"], .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .campo[id="historico_esportivo"],
+    .campo[id="lesoes"], .campo[id="intestino"], .campo[id="tratamento_medico"], .campo[id="sexo"], .campo[id="varizes"],
+    .campo[id="alcool"] {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    
+    .campo[id="estado_civil"] label, .campo[id="objetivos_pessoais"] label, .campo[id="experiencia"] label,
+    .campo[id="historico_esportivo"] label, .campo[id="lesoes"] label, .campo[id="condicoes_familiares"] label,
+    .campo[id="intestino"] label, .campo[id="cardiaco"] label, .campo[id="tratamento_medico"] label,
+    .campo[id="sexo"] label, .campo[id="ortopedico"] label, .campo[id="varizes"] label, .campo[id="hipertensao"] label,
+    .campo[id="epilepsia"] label, .campo[id="diabetes"] label, .campo[id="gestacao"] label, .campo[id="filhos"] label,
+    .campo[id="sono"], .campo[id="alimentacao_manha"], .campo[id="alimentacao_almoco"], .campo[id="alimentacao_jantar"],
+    .campo[id="frequencia_alimentar"], .campo[id="agua"], .campo[id="alcool"] label, .campo[id="cafeina"] label,
+    .campo[id="substancias"] label, .med_antropometricas .campo label {
+        display: block;
+    }
+
+    .campo[id="condicoes_familiares"], .campo[id="medicamento_suplemento"], .campo[id="cardiaco"], .campo[id="ortopedico"],
+    .campo[id="hipertensao"], .campo[id="epilepsia"], .campo[id="diabetes"], .campo[id="gestacao"], .campo[id="filhos"],
+    .campo[id="cafeina"], .campo[id="substancias"], .med_antropometricas .campo, .campo[id="cooper"], .campo[id="wells"],
+    .campo[id="salto_horizontal"], .campo[id="flexao"], .campo[id="abdominais"], .campo[id="quadrado"] {
+        width: 100%;
+        display: block;
+    }
+
+    .campo[id="lesoes"] input, .campo[id="condicoes_familiares"] input, .campo[id="medicamento_suplemento"] input,
+    .campo[id="sono"] input, .campo[id="alimentacao_manha"] input, .campo[id="alimentacao_almoco"] input,
+    .campo[id="alimentacao_jantar"] input, .campo[id="frequencia_alimentar"] input, .campo[id="agua"] input,
+    .med_antropometricas .campo input, .campo[id="cooper"] input, .campo[id="wells"] input, .campo[id="salto_horizontal"] input,
+    .campo[id="flexao"] input, .campo[id="abdominais"] input, .campo[id="quadrado"] input {
+        width: 100%;
+    }
+
+    .campo[id="cirurgias"] {
+        width: 100%;
+    }
+    
+    .campo[id="objetivos_pessoais"], .campo[id="experiencia"], .cooper .descricao {
+        margin-bottom: 16px;
+    }
+}
+.resultados{
+    color: #121010;
+    font-size: 1.2rem;
+}#tituloResultado{
+    font-size: 1.5rem;
+    font-weight: 600;
+}.resultados__item{
+    border: 2px solid #121c39;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px -4px rgba(18,28,57,1);
+
+
+
+}

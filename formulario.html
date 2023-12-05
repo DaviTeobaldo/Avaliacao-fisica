@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Anamnese</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="background-color: blueviolet;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">AVALIAÇÃO FÍSICA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Formulário </a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fórmulas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://cauathe01.github.io/imc/">IMC</a></li>
+              <li><a class="dropdown-item" href="https://castp3.github.io/percentual_gordura-01/home">Percentual de
+                  gordura</a></li>
+              <li><a class="dropdown-item" href="https://anrkkk.github.io/IACED/">IAC</a></li>
+              <li><a class="dropdown-item" href="https://cauathe01.github.io/imc/">RCQ</a></li>
+              <li><a class="dropdown-item" href="https://yokai3.github.io/PGC/ed_pg_c/budega.html/">Percentual de
+                  gordura circunferência</a></li>
+              <li><a class="dropdown-item" href="https://cauathe01.github.io/imc/">RCE</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1 id="titulo">Avaliação Física</h1>
+    <p id="subtitulo"><b>Anamnese, Medidas Antropométricas e Testes Físicos</b></p>
+    <p id="subtitulo">Insira suas informações corretamente para uma avaliação física precisa.</p>
+    <br>
+  </main>
+
+  <form>
+    <input type="hidden" name="formulario" value="anamnese">
+
+    <h4 class="subtitulo">OBSERVAÇÕES:</h4>
+    <p class="descricao"><b>1. * para itens obrigatórios;</b></p>
+    <p class="descricao"><b>2. Para valores numéricos com casa decimais, separar as casas por ponto ( . ), não por
+        vírgula ( , );</b></p>
+    <p class="descricao"><b>3. Para faixas etárias específicas, o resultado de condições como testes físicos ou medidas
+        antropométricas
+        são inderteminados.
+      </b></p>
+
+    <h2 class="titulo">Anamnese</h2>
+    <h4 class="titulo">Informações Pessoais</h4>
+
+    <fieldset>
+      <div class="campo" id="nome">
+        <label for="nome" class="informacao">Nome completo:</label>
+        <input type="text" name="nome" id="nome" required>
+      </div>
+
+      <div class="campo" id="idade">
+        <label for="idade" class="informacao">Idade:</label>
+        <input type="text" name="idade" id="inputIdade" required>
+        <label for="idade" class="pos-informacao">anos.</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="sexo">
+        <label for="sexo" class="informacao" id="sexo">Sexo:</label>
+        <label>
+          <input type="radio" name="opcoes_sexo" id="sexoFeminino" value="Feminino" required> Feminino
+        </label>
+        <label>
+          <input type="radio" name="opcoes_sexo" id="sexoMasculino" value="Masculino" required> Masculino
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="ocupacao">
+        <label for="ocupacao" class="informacao">Ocupação:</label>
+        <input type="text" name="ocupacao" id="ocupacao">
+      </div>
+
+      <div class="campo" id="endereco">
+        <label for="endereco" class="informacao">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="estado_civil">
+        <label for="estado_civil" class="informacao" id="estado_civil">Estado Civil:</label>
+        <label>
+          <input type="radio" name="opcoes_estado_civil" value="Solteiro(a)" required> Solteiro(a)
+        </label>
+        <label>
+          <input type="radio" name="opcoes_estado_civil" value="Casado(a)" required> Casado(a)
+        </label>
+        <label>
+          <input type="radio" name="opcoes_estado_civil" value="Divorciado(a)" required> Divorciado(a)
+        </label>
+        <label>
+          <input type="radio" name="opcoes_estado_civil" value="Viúvo(a)" required> Viúvo(a)
+        </label>
+      </div>
+    </fieldset>
+
+    <h4 class="titulos">Informações de Contato</h4>
+
+    <fieldset>
+      <div class="campo" id="e-mail">
+        <label for="e-mail" class="informacao">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="campo" id="telefone">
+        <label for="telefone" class="informacao">Telefone:</label>
+        <input type="number" name="telefone" id="telefone" required>
+      </div>
+    </fieldset>
+
+    <h4 class="titulos" id="historico">Histórico</h4>
+
+    <fieldset>
+      <div class="campo" id="objetivos_pessoais">
+        <label for="objetivos" class="informacao" id="objetivos_pessoais">Objetivos Pessoais:</label>
+        <label>
+          <input type="radio" name="opcoes_objetivos" value="Hipertrofia" required> Hipertrofia
+        </label>
+        <label>
+          <input type="radio" name="opcoes_objetivos" value="Emagrecimento" required> Emagrecimento
+        </label>
+        <label>
+          <input type="radio" name="opcoes_objetivos" value="Condicionamento" required> Condicionamento Físico
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="experiencia">
+        <label for="experiencia" class="informacao" id="experiencia">Nível de experiência em exercícios físicos:</label>
+        <label>
+          <input type="radio" name="opcoes_experiencia" value="Iniciante" required> Iniciante
+        </label>
+        <label>
+          <input type="radio" name="opcoes_experiencia" value="Intermediario" required> Intermediário
+        </label>
+        <label>
+          <input type="radio" name="opcoes_experiencia" value="Avançado" required> Avançado
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="historico_esportivo">
+        <label for="historico_esportivo" class="informacao" id="historico_esportivo">Pratica ou praticou esportes e/ou
+          exercícios físicos?:</label>
+        <label id="opcao_sim">
+          <input type="radio" name="opcoes_esportes" value="Sim" required> Sim
+        </label>
+        <label>
+          <input type="radio" name="opcoes_esportes" value="Não" required> Não
+        </label>
+      </div>
+    </fieldset>
+
+    <h4 class="titulos" id="historico_medico">Histórico Médico</h4>
+
+    <fieldset>
+
+      <fieldset>
+        <div class="campo" id="tratamento_medico">
+          <label for="tratamento_medico" class="informacao" id="tratamento_medico">Faz tratamento médico?:</label>
+          <label>
+            <input type="radio" name="opcoes_tratamentos_medicos" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_tratamentos_medicos" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="campo" id="doencas">
+        <label for="doencas" class="informacao">Doenças diagnosticadas:</label>
+        <input type="text" name="doencas" id="doencas">
+      </div>
+
+      <div class="campo" id="lesoes">
+        <label for="lesoes" class="informacao">Lesões anteriores (musculares, articulares etc.):</label>
+        <input type="text" name="lesoes" id="doencas">
+      </div>
+
+      <div class="campo" id="cirurgias">
+        <label for="cirurgias" class="informacao">Cirurgias anteriores:</label>
+        <input type="text" name="cirurgias" id="cirurgias">
+      </div>
+
+      <div class="campo" id="alergia_intolerancia">
+        <label for="alergia_intolerancia" class="informacao">Alergias e intolerâncias:</label>
+        <input type="text" name="alergia_intolerancia" id="alergia_intolerancia">
+      </div>
+
+      <div class="campo" id="condicoes_familiares">
+        <label for="condicoes_familiares" class="informacao">Condições familiares relevantes:</label>
+        <input type="text" name="condicoes_familiares" id="condicoes_familiares">
+      </div>
+
+      <div class="campo" id="medicamento_suplemento">
+        <label for="medicamento_suplemento" class="informacao">Medicamentos e/ou suplementos prescritos que está
+          tomando:</label>
+        <input type="text" name="medicamento_suplemento" id="medicamento_suplemento">
+      </div>
+
+      <fieldset>
+        <div class="campo" id="cardiaco">
+          <label for="cardiaco" class="informacao" id="cardiaco">Possui problemas Cardíacos?:</label>
+          <label>
+            <input type="radio" name="opcoes_cardiaco" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_cardiaco" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="intestino">
+          <label for="intestino" class="informacao" id="intestino">Funcionamento Intestinal Regular?:</label>
+          <label>
+            <input type="radio" name="opcoes_intestino" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_intestino" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="ortopedico">
+          <label for="ortopedico" class="informacao" id="ortopedico">Possui Problemas Ortopédicos?:</label>
+          <label>
+            <input type="radio" name="opcoes_ortopedico" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_ortopedico" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="varizes">
+          <label for="varizes" class="informacao" id="varizes">Possui Varizes?:</label>
+          <label>
+            <input type="radio" name="opcoes_varizes" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_varizes" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="hipertensao">
+          <label for="hipertensao" class="informacao" id="hipertensao">Possui Hipertensão?:</label>
+          <label>
+            <input type="radio" name="opcoes_hipertensao" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_hipertensao" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="epilepsia">
+          <label for="epilepsia" class="informacao" id="epilepsia">Possui Epilepsia?:</label>
+          <label>
+            <input type="radio" name="opcoes_epilepsia" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_epilepsia" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="diabetes">
+          <label for="diabetes" class="informacao" id="diabetes">Possui Diabetes?:</label>
+          <label>
+            <input type="radio" name="opcoes_diabetes" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_diabetes" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="gestacao">
+          <label for="gestacao" class="informacao" id="gestacao">É gestante?:</label>
+          <label>
+            <input type="radio" name="opcoes_gestacao" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_gestacao" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="campo" id="filhos">
+          <label for="filhos" class="informacao" id="filhos">Possui filhos?:</label>
+          <label>
+            <input type="radio" name="opcoes_filhos" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="opcoes_filhos" value="Não" required> Não
+          </label>
+        </div>
+      </fieldset>
+
+    </fieldset>
+
+    <h4 class="titulos">Hábitos de vida</h4>
+
+    <fieldset>
+      <div class="campo" id="sono">
+        <label for="sono" class="informacao">* Frequência de sono (horas dormidas por noite, em média):</label>
+        <input type="number" name="sono" id="sono" step="any" required>
+        <label for="sono" class="pos-informacao">horas.</label>
+      </div>
+
+      <div class="campo" id="alimentacao_manha">
+        <label for="alimentacao_manha" class="informacao">* Padrão Alimentar (o que costuma comer) - Café da
+          manhã:</label>
+        <input type="text" name="alimentacao_manha" id="alimentacao" required>
+      </div>
+
+      <div class="campo" id="alimentacao_almoco">
+        <label for="alimentacao_almoco" class="informacao">* Padrão Alimentar (o que costuma comer) - Almoço:</label>
+        <input type="text" name="alimentacao_almoco" id="alimentacao" required>
+      </div>
+
+      <div class="campo" id="alimentacao_jantar">
+        <label for="alimentacao_jantar" class="informacao">* Padrão Alimentar (o que costuma comer) - Jantar:</label>
+        <input type="text" name="alimentacao_jantar" id="alimentacao" required>
+      </div>
+
+      <div class="campo" id="frequencia_alimentar">
+        <label for="frequencia_alimentar" class="informacao">* Frequência alimentar (de quantas em quantas horas costuma
+          comer):</label>
+        <input type="number" name="frequencia_alimentar" id="frequencia_alimentar" step="any" required>
+        <label for="frequencia_alimentar" class="pos-informacao">horas.</label>
+      </div>
+
+      <div class="campo" id="agua">
+        <label for="agua" class="informacao">Quantidade média de água ingerida em um dia (especifique se em L ou
+          Ml):</label>
+        <input type="text" name="agua" id="agua" step="any" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="alcool">
+        <label for="alcool" class="informacao" id="alcool">Consome álcool?:</label>
+        <label>
+          <input type="radio" name="opcoes_alcool" value="Sim" required> Sim
+        </label>
+        <label>
+          <input type="radio" name="opcoes_alcool" value="Não" required> Não
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="cafeina">
+        <label for="alcool" class="informacao" id="cafeina">* Consome cafeína em excesso?:</label>
+        <label>
+          <input type="radio" name="opcoes_cafeina" value="Sim" required> Sim
+        </label>
+        <label>
+          <input type="radio" name="opcoes_cafeina" value="Não" required> Não
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="campo" id="substancias">
+        <label for="substancias" class="informacao" id="substancias">Utiliza substâncias?:</label>
+        <label id="opcao_sim">
+          <input type="radio" name="opcoes_substancias" value="Sim" required> Sim
+        </label>
+        <label>
+          <input type="radio" name="opcoes_substancias" value="Não" required> Não
+        </label>
+      </div>
+    </fieldset>
+
+    <h2 class="titulos">Medidas Antropométricas (preenchido pelo avaliador físico)</h2>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo">Medidas Antropométricas de Base</h4>
+      <div class="campo" id="peso">
+        <label for="peso" class="informacao">* Peso:</label>
+        <input type="number" name="peso" id="inputPeso" required>
+        <label for="peso" class="pos-informacao">quilos.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="estatura">
+        <label for="estatura" class="informacao">Estatura:</label>
+        <input type="text" name="estatura" id="inputEstatura" step="any" required>
+        <label for="estatura" class="pos-informacao">metros.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo" id="braco_direito">Circunferência Braço Direito - Relaxado e Contraído</h4>
+      <div class="campo" id="bic_relx_braco_direito">
+        <label for="bic_relx_braco_direito" class="informacao">* Bíceps (relaxado):</label>
+        <input type="number" name="bic_relx_braco_direito" id="bic_relx_braco_direito" step="any" required>
+        <label for="bic_relx_braco_direito" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="bic_contr_braco_direito">
+        <label for="bic_contr_braco_direito" class="informacao">Bíceps (contraído):</label>
+        <input type="number" name="bic_contr_braco_direito" id="bic_contr_braco_direito" step="any" required>
+        <label for="bic_contr_braco_direito" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="ant_relx_braco_direito">
+        <label for="ant_relx_braco_direito" class="informacao">Antebraço (relaxado):</label>
+        <input type="number" name="ant_relx_braco_direito" id="ant_relx_braco_direito" step="any" required>
+        <label for="ant_relx_braco_direito" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="ant_contr_braco_direito">
+        <label for="ant_contr_braco_direito" class="informacao">Antebraço (contraído):</label>
+        <input type="number" name="ant_contr_braco_direito" id="ant_contr_braco_direito" step="any" required>
+        <label for="ant_contr_braco_direito" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="punho_braco_direito">
+        <label for="punho_braco_direito" class="informacao">Punho:</label>
+        <input type="number" name="punho_braco_direito" id="punho_braco_direito" step="any" required>
+        <label for="punho_braco_direito" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo">Circunferência Braço Esquerdo - Relaxado e Contraído</h4>
+      <div class="campo" id="bic_relx_braco_esquerdo">
+        <label for="bic_relx_braco_esquerdo" class="informacao">* Bíceps (relaxado):</label>
+        <input type="number" name="bic_relx_braco_esquerdo" id="bic_relx_braco_esquerdo" step="any" required>
+        <label for="bic_relx_braco_esquerdo" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="bic_contr_braco_esquerdo">
+        <label for="bic_contr_braco_esquerdo" class="informacao">Bíceps (contraído):</label>
+        <input type="number" name="bic_contr_braco_esquerdo" id="bic_contr_braco_esquerdo" step="any" required>
+        <label for="bic_contr_braco_esquerdo" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="ant_relx_braco_esquerdo">
+        <label for="ant_relx_braco_esquerdo" class="informacao">Antebraço (relaxado):</label>
+        <input type="number" name="ant_relx_braco_esquerdo" id="ant_relx_braco_esquerdo" step="any" required>
+        <label for="ant_relx_braco_esquerdo" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="ant_contr_braco_esquerdo">
+        <label for="ant_contr_braco_esquerdo" class="informacao">Antebraço (contraído):</label>
+        <input type="number" name="ant_contr_braco_esquerdo" id="ant_contr_braco_esquerdo" step="any" required>
+        <label for="ant_contr_braco_esquerdo" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="punho_braco_esquerdo">
+        <label for="punho_braco_esquerdo" class="informacao">Punho:</label>
+        <input type="number" name="punho_braco_esquerdo" id="punho_braco_esquerdo" step="any" required>
+        <label for="punho_braco_esquerdo" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo">Circunferência Corpo e pescoço</h4>
+      <div class="campo" id="pescoco">
+        <label for="pescoco" class="informacao">* Pescoço:</label>
+        <input type="number" name="pescoco" id="pescoco" step="any" required>
+        <label for="pescoco" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="peitoral">
+        <label for="peitoral" class="informacao">Peitoral:</label>
+        <input type="number" name="peitoral" id="peitoral" step="any" required>
+        <label for="peitoral" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="cintura">
+        <label for="cintura" class="informacao">Cintura:</label>
+        <input type="number" name="cintura" id="inputCintura" step="any" required>
+        <label for="cintura" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="abdominal">
+        <label for="abdominal" class="informacao">Abdominal:</label>
+        <input type="number" name="abdominal" id="abdominal" step="any" required>
+        <label for="abdominal" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="quadril">
+        <label for="quadril" class="informacao">Quadril:</label>
+        <input type="number" name="quadril" id="inputQuadril" step="any" required>
+        <label for="quadril" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo">Circunferência Perna Direita - Relaxada e Contraída</h4>
+      <div class="campo" id="coxa_relaxada_direita">
+        <label for="coxa_relaxada_direita" class="informacao">* Coxa (relaxado):</label>
+        <input type="number" name="coxa_relaxada_direita" id="coxa_relaxada_direita" step="any" required>
+        <label for="coxa_relaxada_direita" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="coxa_contraida_direita">
+        <label for="coxa_contraida_direita" class="informacao">* Coxa (contraída):</label>
+        <input type="number" name="coxa_contraida_direita" id="coxa_contraida_direita" step="any" required>
+        <label for="coxa_contraida_direita" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="pant_relaxada_direita">
+        <label for="pant_relaxada_direita" class="informacao">Panturrilha (relaxada):</label>
+        <input type="number" name="pant_relaxada_direita" id="pant_relaxada_direita" step="any" required>
+        <label for="pant_relaxada_direita" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="pant_contraida_direita">
+        <label for="pant_contraida_direita" class="informacao">Panturrilha (contraída):</label>
+        <input type="number" name="pant_contraida_direita" id="pant_contraida_direita" step="any" required>
+        <label for="pant_contraida_direita" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo" id="perna_esquerda">Circunferência Perna Esquerda - Relaxada e Contraída</h4>
+      <div class="campo" id="coxa_relaxada_esquerda">
+        <label for="coxa_relaxada_esquerda" class="informacao">* Coxa (relaxado):</label>
+        <input type="number" name="coxa_relaxada_esquerda" id="coxa_relaxada_esquerda" step="any" required>
+        <label for="coxa_relaxada_esquerda" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="coxa_contraida_esquerda">
+        <label for="coxa_contraida_esquerda" class="informacao">Coxa (contraída):</label>
+        <input type="number" name="coxa_contraida_esquerda" id="coxa_contraida_esquerda" step="any" required>
+        <label for="coxa_contraida_esquerda" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="pant_relaxada_esquerda">
+        <label for="pant_relaxada_esquerda" class="informacao">Panturrilha (relaxada):</label>
+        <input type="number" name="pant_relaxada_esquerda" id="pant_relaxada_esquerda" step="any" required>
+        <label for="pant_relaxada_esquerda" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="pant_contraida_esquerda">
+        <label for="pant_contraida_esquerda" class="informacao">Panturrilha (contraída):</label>
+        <input type="number" name="pant_contraida_esquerda" id="pant_contraida_esquerda" step="any" required>
+        <label for="pant_contraida_esquerda" class="pos-informacao">cm.</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo" id="dobras_cutaneas_masc">Dobras Cutâneas (preencha se for do sexo masculino)</h4>
+      <div class="campo" id="triceps">
+        <label for="triceps" class="informacao">Tríceps:</label>
+        <input type="number" name="triceps" id="inputTriceps" step="any">
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="supra_iliaca">
+        <label for="supra_iliaca" class="informacao">Supra-ilíaca:</label>
+        <input type="number" name="supra_iliaca" id="inputSupra_iliaca" step="any">
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="dobra_abdominal">
+        <label for="dobra_abdominal" class="informacao">Abdominal:</label>
+        <input type="number" name="dobra_abdominal" id="inputDobra_abdominal" step="any">
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <h4 class="subtitulo" id="dobras_cutaneas_femn">Dobras Cutâneas (preencha se for do sexo feminino)</h4>
+      <div class="campo" id="subescapular">
+        <label for="subescapular" class="informacao">* Subescapular:</label>
+        <input type="number" name="subescapular" id="inputSubescapular" step="any">
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="supra_iliaca_fem">
+        <label for="supra_iliaca_fem" class="informacao">Supra-ilíaca:</label>
+        <input type="number" name="supra_iliaca_fem" id="inputSupra_iliaca_fem" step="any">
+      </div>
+    </fieldset>
+
+    <fieldset class="med_antropometricas">
+      <div class="campo" id="coxa">
+        <label for="coxa" class="informacao">Coxa:</label>
+        <input type="number" name="coxa" id="inputCoxa" step="any">
+      </div>
+    </fieldset>
+
+    <h2 class="titulos">Testes Físicos</h2>
+
+    <h4 class="subtitulo" id="teste_cooper">Teste de Cooper</h2>
+
+      <fieldset>
+        <div class="cooper">
+          <p class="descricao">O teste de Cooper é um exame clássico que coloca à prova a resistência cardiovascular
+            e aeróbica de um indivíduo. Durante 12 minutos, a pessoa é desafiada a correr a maior distância possível
+            em um percurso preestabelecido. Esse teste fornece informações valiosas sobre a capacidade do sistema
+            cardiovascular em sustentar atividades de longa duração, sendo a distância percorrida usada como indicador
+            de condicionamento físico.</p>
+        </div>
+        <div class="campo" id="cooper">
+          <label for="cooper" class="informacao" id="cooper">Distância percorrida (em metros):</label>
+          <input type="number" name="cooper" id="inputCooper" step="any" required>
+          <label for="cooper" class="pos-informacao">m.</label>
+        </div>
+      </fieldset>
+
+      <h4 class="subtitulo" id="wells">Teste de flexibilidade - (sem Banco de Wells - Fita Métrica)</h2>
+
+        <fieldset>
+          <div class="wells">
+            <p class="descricao">Quando o equipamento específico não está disponível, é possível realizar uma versão
+              adaptada do teste de flexão do tronco. Nesse método, fique de pé com os pés afastados na largura dos
+              ombros
+              e os joelhos levemente flexionados. Levante os braços acima da cabeça e incline o tronco para a frente,
+              esticando os quadris. Tente tocar o chão com as pontas dos dedos. Mantenha as costas retas durante o
+              movimento.
+              Use uma fita métrica para medir a distância entre os dedos e o chão. Anote essa medida como uma indicação
+              geral
+              da sua flexibilidade na região lombar e dos músculos isquiotibiais. Embora menos preciso que o teste
+              original,
+              essa adaptação fornece uma ideia da flexibilidade.
+            </p>
+          </div>
+          <div class="campo" id="wells">
+            <label for="wells" class="informacao">Distância alcançada (em cm):</label>
+            <input type="number" name="wells" id="inputFlexibilidade" step="any" required>
+            <label for="wells" class="pos-informacao">cm.</label>
+          </div>
+        </fieldset>
+
+        <h4 class="subtitulo" id="salto_horizontal">Teste de força explosiva de membros inferiores - Salto horizontal
+          </h2>
+
+          <fieldset>
+            <div class="salto_horizontal">
+              <p class="descricao">A força explosiva dos membros inferiores é o foco do teste de salto horizontal. Nesse
+                teste,
+                o indivíduo parte de uma posição agachada e realiza um salto horizontal o mais longe possível. A
+                distância
+                alcançada é um indicador direto da capacidade dos músculos das pernas em gerar potência em um movimento
+                explosivo.
+                Esse teste é crucial para avaliar a eficiência da mecânica do salto e a força muscular envolvida.
+              </p>
+            </div>
+            <div class="campo" id="salto_horizontal">
+              <label for="salto_horizontal" class="informacao">Distâcia alcançada (em cm):</label>
+              <input type="number" name="salto_horizontal" id="inputSalto_horizontal" step="any" required>
+              <label for="salto_horizontal" class="pos-informacao">cm.</label>
+            </div>
+          </fieldset>
+
+          <h4 class="subtitulo" id="flexao_de_braco">Teste de força explosiva de membros superiores - Flexão de braço
+            </h2>
+
+            <fieldset>
+              <div class="flexao">
+                <p class="descricao">Avaliar a força explosiva dos membros superiores é o objetivo do teste de flexão de
+                  braço.
+                  Nesse desafio, o participante executa flexões de braço, pressionando o corpo para cima e baixo. O
+                  número de
+                  flexões realizadas corretamente revela a força e resistência dos músculos peitorais, dos ombros e
+                  tríceps. Esse
+                  teste é uma medida direta da capacidade do corpo em realizar esforços explosivos com os braços.
+                </p>
+              </div>
+              <div class="campo" id="flexao">
+                <label for="flexao" class="informacao">* Quantidade de flexões executadas:</label>
+                <input type="number" name="flexao" id="inputFlexao" step="any" required>
+                <label for="flexao" class="pos-informacao">repetições.</label>
+              </div>
+            </fieldset>
+
+            <h4 class="subtitulo" id="abdominais">Teste de resistência muscular localizada - Abdominais</h2>
+
+              <fieldset>
+                <div class="abdominais">
+                  <p class="descricao">A resistência muscular localizada é avaliada no teste de abdominal em 1 minuto.
+                    Durante
+                    60 segundos, o participante executa uma série de abdominais de forma contínua. Esse teste destaca a
+                    capacidade
+                    dos músculos abdominais em sustentar esforços repetitivos ao longo do tempo, proporcionando uma
+                    visão clara da
+                    resistência muscular localizada nessa região.
+                  </p>
+                </div>
+                <div class="campo" id="abdominais">
+                  <label for="abdominais" class="informacao">* Quantidade de abdominais executados:</label>
+                  <input type="number" name="abdominais" id="inputAbdominais" step="any" required>
+                  <label for="abdominais" class="pos-informacao">repetições.</label>
+                </div>
+              </fieldset>
+
+              <h4 class="subtitulo" id="teste_quadrado">Teste de Agilidade - Teste do Quadrado</h2>
+
+                <fieldset>
+                  <div class="quadrado">
+                    <p class="descricao">A agilidade e a habilidade de mudar rapidamente de direção são testadas no
+                      desafiante teste
+                      do quadrado. O participante é instruído a realizar uma sequência de movimentos, correndo até um
+                      cone, mudando
+                      de direção e repetindo o padrão. Esse teste avalia a velocidade de reação, a agilidade e a
+                      coordenação motora,
+                      sendo um indicador preciso da capacidade do corpo de responder e adaptar-se a mudanças rápidas de
+                      direção.
+                    </p>
+                  </div>
+                  <div class="campo" id="quadrado">
+                    <label for="quadrado" class="informacao">* Tempo de execução:</label>
+                    <input type="number" name="quadrado" id="inputAgilidade" step="any" required>
+                    <label for="quadrado" class="pos-informacao">segundos.</label>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <button type="submit" id="botao" class="botao">Exibir resultados</button>
+                </fieldset>
+
+                <ul class="resultados" style="list-style: none;">
+                  <h4 style="display: none;" id="tituloResultado">RESULTADOS</h4>
+
+                  </section>
+
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
