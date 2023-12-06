@@ -777,15 +777,15 @@ function calcularRCE(){
     var rce = circunferencia/estatura
     if(masculinoRadio.checked){
         if(rce > 0.52){
-            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Baixo Risco de Desenvolver Doenças Cardiovasculares`
+            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Acima do ponto de corte.`
         }else{
-            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Alto Risco de Desenvolver Doenças Cardiovasculares`
+            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Está no ponte de corte.`
         }
     }else if(femininoRadio.checked){
         if(rce > 0.53){
-            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Baixo Risco de Desenvolver Doenças Cardiovasculares`
+            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Acima do ponto de corte.`
         }else{
-            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Alto Risco de Desenvolver Doenças Cardiovasculares`
+            resultado.innerHTML += `<li class="resultados__item mt-3">RCE: ${rce.toFixed(2)}      Situação: Está no ponte de corte.`
         }
     }
     return rce;
